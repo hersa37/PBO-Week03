@@ -73,6 +73,12 @@ public class Circle4 {
         yPosition+=distance;
         return yPosition;
     }
+    
+    public double getArea(){
+        double area=Math.PI*radius*radius;
+        return area;
+    } 
+    
     public String toString(){
         return "Radius\t\t "+radius
                 +"\nColor\t\t: "+color

@@ -58,6 +58,11 @@ public class Circle2 {
         return 2*Math.PI*radius;
     }
     
+    public double getArea(){
+        double area=Math.PI*radius*radius;
+        return area;
+    } 
+    
     public String toString(){
         return "Radius\t\t "+radius
                 +"\nColor\t\t: "+color

@@ -13,6 +13,7 @@ package com.pbo1.week3;
  */
 public class Circle3 {
     private double radius;
+    
     private double xPosition;
     private double yPosition;
     private String color;
@@ -62,6 +63,11 @@ public class Circle3 {
     public double getCircumference(){
         return 2*Math.PI*radius;
     }
+    
+    public double getArea(){
+        double area=Math.PI*radius*radius;
+        return area;
+    } 
     
     public String toString(){
         return "Radius\t\t "+radius
