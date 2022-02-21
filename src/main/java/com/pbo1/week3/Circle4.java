@@ -11,78 +11,13 @@ package com.pbo1.week3;
  * Bernardus Hersa Galih Prakoso - 215314018
  * Informatika - Universitas Sanata Dharma
  */
-public class Circle4 {
+public class Circle4 extends Circle3{
     
-    private double radius;
-    private double xPosition;
-    private double yPosition;
-    private String color;
-    
-    public Circle4() {
-        radius=0;
-        color="";
+    public void moveHorisontal(double distance){
+        setXPosition(getXPosition()+distance);
     }
     
-    public Circle4(double xPosition, double yPosition){
-        this.xPosition=xPosition;
-        this.yPosition=yPosition;
-    }
-    
-    public void setRadius(double newRadius){
-        radius=newRadius;
-    }
-    
-    public double getRadius(){
-        return radius;
-    }
-    
-    public void setXPosition(double newXPosition){
-        xPosition=newXPosition;
-    }
-    
-    public double getXPosition(){
-        return xPosition;
-    }
-    
-    public void setYPosition(double newYPosition){
-        yPosition=newYPosition;
-    }
-    
-    public double getYPosition(){
-        return yPosition;
-    }
-    
-    public void setColor(String newColor){
-        color=newColor;
-    }
-    
-    public String getColor(){
-        return color;
-    }
-    
-    public double getCircumference(){
-        return 2*Math.PI*radius;
-    }
-    
-    public double moveHorisontal(double distance){
-        xPosition+=distance;
-        return xPosition;
-    }
-    
-    public double moveVertical(double distance){
-        yPosition+=distance;
-        return yPosition;
-    }
-    
-    public double getArea(){
-        double area=Math.PI*radius*radius;
-        return area;
-    } 
-    
-    public String toString(){
-        return "Radius\t\t "+radius
-                +"\nColor\t\t: "+color
-                +"\nx position\t: "+xPosition
-                +"\ny position\t: "+yPosition;
+    public void moveVertical(double distance){
+        setYPosition(getXPosition()+distance);
     }
 }
