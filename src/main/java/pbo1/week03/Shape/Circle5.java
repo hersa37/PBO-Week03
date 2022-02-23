@@ -7,9 +7,6 @@ package pbo1.week03.Shape;
 
 import java.awt.Color;
 import java.awt.Graphics;
-import java.awt.Graphics2D;
-import java.awt.Shape;
-import java.awt.geom.Ellipse2D;
 
 
 /**
@@ -90,14 +87,12 @@ public class Circle5 {
         return 2*Math.PI*radius;
     }
     
-    public double moveHorizontal(int distance){
+    public void moveHorizontal(int distance){
         xPosition+=distance;
-        return xPosition;
     }
     
-    public double moveVertical(int distance){
+    public void moveVertical(int distance){
         yPosition+=distance;
-        return yPosition;
     }
     
     public double getArea(){
@@ -105,15 +100,9 @@ public class Circle5 {
         return area;
     } 
     
-    public String toString(){
-        return "Radius\t\t "+radius
-                +"\nColor\t\t: "+color
-                +"\nx position\t: "+xPosition
-                +"\ny position\t: "+yPosition;
-    }
+    
     
     public void draw(Graphics g){
-        Graphics2D g2d=(Graphics2D) g;
         switch (color){
             case "white": 
                 g.setColor(Color.WHITE);
@@ -124,10 +113,34 @@ public class Circle5 {
             case "red":
                 g.setColor(Color.red);
                 break;
+            case "pink": 
+                g.setColor(Color.pink);
+                break;
+            case "orange":
+                g.setColor(Color.orange);
+                break;
+            case "yellow":
+                g.setColor(Color.yellow);
+                break;
+            case "green":
+                g.setColor(Color.green);
+                break;
+            case "blue":
+                g.setColor(Color.blue);
+                break;
+            default:
+                g.setColor(Color.BLACK);
             
             
         }
         
-        g2d.fillArc(xPosition, yPosition, radius, radius, 0, 360);
+        g.fillArc(xPosition, yPosition, radius, radius, 0, 360);
+    }
+    
+    public String toString(){
+        return "Radius\t\t "+radius
+                +"\nColor\t\t: "+color
+                +"\nx position\t: "+xPosition
+                +"\ny position\t: "+yPosition;
     }
 }

@@ -83,20 +83,19 @@ public class Circle4 {
         return 2*Math.PI*radius;
     }
     
-    public double moveHorizontal(int distance){
-        xPosition+=distance;
-        return xPosition;
-    }
-    
-    public double moveVertical(int distance){
-        yPosition+=distance;
-        return yPosition;
-    }
-    
     public double getArea(){
         double area=Math.PI*radius*radius;
         return area;
     } 
+    
+    public void moveHorizontal(int distance){
+        xPosition+=distance;
+    }
+    
+    public void moveVertical(int distance){
+        yPosition+=distance;
+    }    
+    
     
     public String toString(){
         return "Radius\t\t "+radius
