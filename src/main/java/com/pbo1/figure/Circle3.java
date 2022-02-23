@@ -10,7 +10,7 @@ package com.pbo1.figure;
  * Bernardus Hersa Galih Prakoso - 215314018
  * Informatika - Universitas Sanata Dharma
  */
-public class Circle3 {
+public class Circle3 extends Circle2{
     
     private Circle2 circle3;    
     
