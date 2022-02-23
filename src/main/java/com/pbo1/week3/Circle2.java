@@ -18,8 +18,10 @@ public class Circle2 {
     private String color;
     
     public Circle2() {
-        radius=0;
-        color="";
+        radius=20;
+        xPosition=100;
+        yPosition=100;
+        color="black";
     }
     
     public void setRadius(double newRadius){

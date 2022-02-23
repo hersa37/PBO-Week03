@@ -19,13 +19,17 @@ public class Circle3 {
     private String color;
     
     public Circle3() {
-        radius=0;
-        color="";
+        radius=20;
+        xPosition=100;
+        yPosition=100;
+        color="black";
     }
     
-    public Circle3(double xPosition, double yPosition){
+    public Circle3(double radius, double xPosition, double yPosition, String color){
+        this.radius=radius;
         this.xPosition=xPosition;
         this.yPosition=yPosition;
+        this.color=color;
     }
     
     public void setRadius(double newRadius){
