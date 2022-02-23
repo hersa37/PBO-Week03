@@ -3,7 +3,7 @@
  *  Do not use without permission
  */
 
-package com.pbo1.week3;
+package pbo1.week03.Shape;
 
 /**
  *
@@ -12,52 +12,67 @@ package com.pbo1.week3;
  * Informatika - Universitas Sanata Dharma
  */
 public class Circle3 {
-    private double radius;
     
-    private double xPosition;
-    private double yPosition;
+    private final int RADIUS;
+    private final int XPOSITION;
+    private final int YPOSITION;
+    private String COLOR;
+    
+    private int radius;
+    private int xPosition;
+    private int yPosition;
     private String color;
     
     public Circle3() {
-        radius=20;
-        xPosition=100;
-        yPosition=100;
-        color="black";
+        RADIUS=20;
+        XPOSITION=100;
+        YPOSITION=100;
+        COLOR="black";
+        
+        radius=RADIUS;
+        xPosition=XPOSITION;
+        yPosition=YPOSITION;
+        color=COLOR;
     }
     
-    public Circle3(double radius, double xPosition, double yPosition, String color){
+    public Circle3(int radius, int xPosition, int yPosition, String color){
+        RADIUS=radius;
+        XPOSITION=xPosition;
+        YPOSITION=yPosition;
+        COLOR=color;
+        
+        this.radius=RADIUS;
+        this.xPosition=XPOSITION;
+        this.yPosition=YPOSITION;
+        this.color=COLOR;
+    }
+    
+    public void setRadius(int radius){
         this.radius=radius;
-        this.xPosition=xPosition;
-        this.yPosition=yPosition;
-        this.color=color;
-    }
-    
-    public void setRadius(double newRadius){
-        radius=newRadius;
     }
     
     public double getRadius(){
         return radius;
     }
     
-    public void setXPosition(double newXPosition){
-        xPosition=newXPosition;
+    public void setXPosition(int xPosition){
+        this.xPosition=xPosition;
     }
     
     public double getXPosition(){
         return xPosition;
     }
     
-    public void setYPosition(double newYPosition){
-        yPosition=newYPosition;
+    public void setYPosition(int yPosition){
+        this.yPosition=yPosition;
     }
     
     public double getYPosition(){
         return yPosition;
     }
     
-    public void setColor(String newColor){
-        color=newColor;
+    public void setColor(String color){
+        this.color=color;
     }
     
     public String getColor(){

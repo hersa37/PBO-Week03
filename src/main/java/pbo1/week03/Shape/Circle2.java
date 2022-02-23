@@ -3,7 +3,7 @@
  *  Do not use without permission
  */
 
-package com.pbo1.week3;
+package pbo1.week03.Shape;
 
 /**
  *
@@ -12,27 +12,37 @@ package com.pbo1.week3;
  * Informatika - Universitas Sanata Dharma
  */
 public class Circle2 {
-    private double radius;
-    private double xPosition;
-    private double yPosition;
+    private final int RADIUS;
+    private final int XPOSITION;
+    private final int YPOSITION;
+    private String COLOR;
+    
+    private int radius;
+    private int xPosition;
+    private int yPosition;
     private String color;
     
     public Circle2() {
-        radius=20;
-        xPosition=100;
-        yPosition=100;
-        color="black";
+        RADIUS=20;
+        XPOSITION=100;
+        YPOSITION=100;
+        COLOR="black";
+        
+        radius=RADIUS;
+        xPosition=XPOSITION;
+        yPosition=YPOSITION;
+        color=COLOR;
     }
     
-    public void setRadius(double newRadius){
+    public void setRadius(int newRadius){
         radius=newRadius;
     }
     
-    public double getRadius(){
+    public int getRadius(){
         return radius;
     }
     
-    public void setXPosition(double newXPosition){
+    public void setXPosition(int newXPosition){
         xPosition=newXPosition;
     }
     
@@ -40,7 +50,7 @@ public class Circle2 {
         return xPosition;
     }
     
-    public void setYPosition(double newYPosition){
+    public void setYPosition(int newYPosition){
         yPosition=newYPosition;
     }
     

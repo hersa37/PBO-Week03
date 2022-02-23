@@ -3,7 +3,7 @@
  *  Do not use without permission
  */
 
-package com.pbo1.week3;
+package pbo1.week03.Shape;
 
 /**
  *
