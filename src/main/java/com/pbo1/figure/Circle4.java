@@ -3,7 +3,7 @@
  *  Do not use without permission
  */
 
-package com.pbo1.week3;
+package com.pbo1.figure;
 
 /**
  *
@@ -11,10 +11,13 @@ package com.pbo1.week3;
  * Bernardus Hersa Galih Prakoso - 215314018
  * Informatika - Universitas Sanata Dharma
  */
-public class Circle4 extends Circle3{
+public class Circle4{
+    
+    private Circle2 circle2;
+    private Circle3 circle3;
     
     public void moveHorisontal(double distance){
-        setXPosition(getXPosition()+distance);
+        circle3.setXPosition(circle3()+distance);
     }
     
     public void moveVertical(double distance){
