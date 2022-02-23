@@ -90,7 +90,7 @@ public class Circle3 {
     } 
     
     public String toString(){
-        return "Radius\t\t "+radius
+        return "Radius\t\t: "+radius
                 +"\nColor\t\t: "+color
                 +"\nx position\t: "+xPosition
                 +"\ny position\t: "+yPosition;

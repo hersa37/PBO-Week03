@@ -3,7 +3,7 @@
  *  Do not use without permission
  */
 
-package pbo1.week03.Shape;
+package pbo1.week03.Time;
 
 /**
  *
@@ -12,16 +12,17 @@ package pbo1.week03.Shape;
  * Informatika - Universitas Sanata Dharma
  */
 public class Time {
-    
+    //Constants
     private final int SECOND;
     private final int MINUTE;
     private final int HOUR;
-    
+    //Attributes
     private int second;
     private int minute;
     private int hour;
     
     public Time(){
+        
         SECOND=0;
         MINUTE=0;
         HOUR=0;
@@ -50,7 +51,11 @@ public class Time {
     }
     
     public void setMinute(int minute){
-        this.minute=minute;
+        if(minute<60 && minute>=0){
+            this.minute=minute;
+        }else{
+            this.minute=59;
+        }
     }
     
     public int getMinute(){
@@ -66,7 +71,7 @@ public class Time {
     }
     
     public String toString(){
-        return "Second\t\t "+second
+        return "Second\t: "+second
                 +"\nMinute\t: "+minute
                 +"\nHour\t: "+hour;
     }

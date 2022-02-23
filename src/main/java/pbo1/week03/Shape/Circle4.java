@@ -12,12 +12,12 @@ package pbo1.week03.Shape;
  * Informatika - Universitas Sanata Dharma
  */
 public class Circle4 {
-    
+    //Constant
     private final int RADIUS;
     private final int XPOSITION;
     private final int YPOSITION;
     private final String COLOR;
-    
+    //Attribute
     private int radius;
     private int xPosition;
     private int yPosition;
@@ -98,7 +98,7 @@ public class Circle4 {
     
     
     public String toString(){
-        return "Radius\t\t "+radius
+        return "Radius\t\t: "+radius
                 +"\nColor\t\t: "+color
                 +"\nx position\t: "+xPosition
                 +"\ny position\t: "+yPosition;

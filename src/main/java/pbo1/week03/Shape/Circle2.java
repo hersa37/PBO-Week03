@@ -17,7 +17,6 @@ public class Circle2 {
     private final int XPOSITION;
     private final int YPOSITION;
     private final String COLOR;
-    
     //Attribute
     private int radius;
     private int xPosition;
@@ -79,7 +78,7 @@ public class Circle2 {
     } 
     
     public String toString(){
-        return "Radius\t\t "+radius
+        return "Radius\t\t: "+radius
                 +"\nColor\t\t: "+color
                 +"\nx position\t: "+xPosition
                 +"\ny position\t: "+yPosition;
