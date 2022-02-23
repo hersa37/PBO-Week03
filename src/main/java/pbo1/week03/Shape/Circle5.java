@@ -129,8 +129,7 @@ public class Circle5 {
                 g.setColor(Color.blue);
                 break;
             default:
-                g.setColor(Color.BLACK);
-            
+                g.setColor(Color.BLACK);           
             
         }
         

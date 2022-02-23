@@ -35,7 +35,7 @@ public class DrawJFrame {
         panelCircle.addDraw(circle);
         
         TimeUnit.SECONDS.sleep(1);
-        circle.setColor("red");
+        circle.setColor("green");
        
         panelCircle.addDraw(circle);
         
