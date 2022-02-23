@@ -13,15 +13,39 @@ package pbo1.week03.Shape;
  */
 public class Time {
     
-    private double second;
+    private final int SECOND;
+    private final int MINUTE;
+    private final int HOUR;
+    
+    private int second;
     private int minute;
     private int hour;
     
-    public void setSecond(double second){
+    public Time(){
+        SECOND=0;
+        MINUTE=0;
+        HOUR=0;
+        
+        second=SECOND;
+        minute=MINUTE;
+        hour=HOUR;        
+    }
+    
+    public Time(int second, int minute, int hour){
+        SECOND=second;
+        MINUTE=minute;
+        HOUR=hour;
+        
+        this.second=SECOND;
+        this.minute=MINUTE;
+        this.hour=HOUR;        
+    }
+    
+    public void setSecond(int second){
         this.second=second;
     }
     
-    public double getSecond(){
+    public int getSecond(){
         return second;
     }
     

@@ -134,7 +134,7 @@ public class Circle5 {
             
         }
         
-        g.fillArc(xPosition, yPosition, radius, radius, 0, 360);
+        g.fillArc(xPosition, yPosition, 2*radius, 2*radius, 0, 360);
     }
     
     public String toString(){

@@ -15,8 +15,6 @@ import pbo1.week03.Shape.Circle5;
  * Informatika - Universitas Sanata Dharma
  */
 public class DrawJFrame {
- 
-    private JFrame frame;
     
     public static void main(String[] args) throws InterruptedException{
         JFrame frame=new JFrame("Draw Circle");

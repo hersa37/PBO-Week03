@@ -16,7 +16,7 @@ public class Circle4 {
     private final int RADIUS;
     private final int XPOSITION;
     private final int YPOSITION;
-    private String COLOR;
+    private final String COLOR;
     
     private int radius;
     private int xPosition;

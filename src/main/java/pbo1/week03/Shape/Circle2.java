@@ -12,11 +12,13 @@ package pbo1.week03.Shape;
  * Informatika - Universitas Sanata Dharma
  */
 public class Circle2 {
+    //Constant
     private final int RADIUS;
     private final int XPOSITION;
     private final int YPOSITION;
-    private String COLOR;
+    private final String COLOR;
     
+    //Attribute
     private int radius;
     private int xPosition;
     private int yPosition;
@@ -67,7 +69,8 @@ public class Circle2 {
     }
     
     public double getCircumference(){
-        return 2*Math.PI*radius;
+        double c=2*Math.PI*radius;
+        return c;
     }
     
     public double getArea(){

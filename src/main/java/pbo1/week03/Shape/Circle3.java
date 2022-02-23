@@ -12,12 +12,13 @@ package pbo1.week03.Shape;
  * Informatika - Universitas Sanata Dharma
  */
 public class Circle3 {
-    
+    //Constant
     private final int RADIUS;
     private final int XPOSITION;
     private final int YPOSITION;
-    private String COLOR;
+    private final String COLOR;
     
+    //Attribute
     private int radius;
     private int xPosition;
     private int yPosition;
@@ -34,7 +35,7 @@ public class Circle3 {
         yPosition=YPOSITION;
         color=COLOR;
     }
-    
+
     public Circle3(int radius, int xPosition, int yPosition, String color){
         RADIUS=radius;
         XPOSITION=xPosition;
