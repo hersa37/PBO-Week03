@@ -47,7 +47,7 @@ public class Circle2 {
         xPosition=newXPosition;
     }
     
-    public double getXPosition(){
+    public int getXPosition(){
         return xPosition;
     }
     
@@ -55,7 +55,7 @@ public class Circle2 {
         yPosition=newYPosition;
     }
     
-    public double getYPosition(){
+    public int getYPosition(){
         return yPosition;
     }
     
@@ -68,13 +68,11 @@ public class Circle2 {
     }
     
     public double getCircumference(){
-        double c=2*Math.PI*radius;
-        return c;
+        return 2*Math.PI*radius;
     }
     
     public double getArea(){
-        double area=Math.PI*radius*radius;
-        return area;
+        return Math.PI*radius*radius;
     } 
     
     public String toString(){

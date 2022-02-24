@@ -13,9 +13,6 @@ package pbo1.week03.Shape;
  */
 public class MainCircle4 {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
         
         System.out.println("\t\t>>Cirlce4<<\n");

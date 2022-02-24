@@ -47,11 +47,11 @@ public class Circle4 {
         this.color=COLOR;
     }
     
-    public void setRadius(int radius){
+   public void setRadius(int radius){
         this.radius=radius;
     }
     
-    public double getRadius(){
+    public int getRadius(){
         return radius;
     }
     
@@ -59,7 +59,7 @@ public class Circle4 {
         this.xPosition=xPosition;
     }
     
-    public double getXPosition(){
+    public int getXPosition(){
         return xPosition;
     }
     
@@ -67,7 +67,7 @@ public class Circle4 {
         this.yPosition=yPosition;
     }
     
-    public double getYPosition(){
+    public int getYPosition(){
         return yPosition;
     }
     
@@ -84,8 +84,7 @@ public class Circle4 {
     }
     
     public double getArea(){
-        double area=Math.PI*radius*radius;
-        return area;
+        return Math.PI*radius*radius;
     } 
     
     public void moveHorizontal(int distance){

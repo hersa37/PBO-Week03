@@ -20,7 +20,7 @@ public class Circle5 {
     private final int RADIUS;
     private final int XPOSITION;
     private final int YPOSITION;
-    private String COLOR;
+    private final String COLOR;
     
     private int radius;
     private int xPosition;
@@ -55,7 +55,7 @@ public class Circle5 {
         this.radius=radius;
     }
     
-    public double getRadius(){
+    public int getRadius(){
         return radius;
     }
     
@@ -63,7 +63,7 @@ public class Circle5 {
         this.xPosition=xPosition;
     }
     
-    public double getXPosition(){
+    public int getXPosition(){
         return xPosition;
     }
     
@@ -71,7 +71,7 @@ public class Circle5 {
         this.yPosition=yPosition;
     }
     
-    public double getYPosition(){
+    public int getYPosition(){
         return yPosition;
     }
     
@@ -86,21 +86,16 @@ public class Circle5 {
     public double getCircumference(){
         return 2*Math.PI*radius;
     }
-    
+    public double getArea(){
+        return Math.PI*radius*radius;
+    } 
     public void moveHorizontal(int distance){
         xPosition+=distance;
     }
     
     public void moveVertical(int distance){
         yPosition+=distance;
-    }
-    
-    public double getArea(){
-        double area=Math.PI*radius*radius;
-        return area;
-    } 
-    
-    
+    }    
     
     public void draw(Graphics g){
         switch (color){
@@ -129,8 +124,7 @@ public class Circle5 {
                 g.setColor(Color.blue);
                 break;
             default:
-                g.setColor(Color.BLACK);           
-            
+                g.setColor(Color.BLACK);         
         }
         
         g.fillArc(xPosition, yPosition, 2*radius, 2*radius, 0, 360);
