@@ -51,11 +51,8 @@ public class Time {
     }
     
     public void setMinute(int minute){
-        if(minute<60 && minute>=0){
-            this.minute=minute;
-        }else{
-            this.minute=59;
-        }
+        this.minute=minute;
+        
     }
     
     public int getMinute(){

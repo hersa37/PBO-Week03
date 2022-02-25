@@ -13,9 +13,6 @@ package pbo1.week03.Time;
  */
 public class MainTime {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
         System.out.println("\t\t>>Time<<\n");
         
@@ -31,5 +28,4 @@ public class MainTime {
         System.out.println("Atribut akhir:\n"+time.toString()+"\n");
         System.out.println("____________________________________");
     }
-
 }

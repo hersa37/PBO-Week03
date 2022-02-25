@@ -1,0 +1,13 @@
+@startuml
+class java.awt.Color
+class java.awt.Graphics
+class pbo1.week03.Shape.Circle2
+class pbo1.week03.Shape.Circle3
+class pbo1.week03.Shape.Circle4
+class pbo1.week03.Shape.Circle5
+class pbo1.week03.Shape.MainCircle2
+class pbo1.week03.Shape.MainCircle3
+class pbo1.week03.Shape.MainCircle4
+pbo1.week03.Shape.Circle5 ..> java.awt.Color
+pbo1.week03.Shape.Circle5 ..> java.awt.Graphics
+@enduml

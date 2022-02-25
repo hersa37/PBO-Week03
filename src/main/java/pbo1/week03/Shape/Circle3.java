@@ -85,8 +85,7 @@ public class Circle3 {
     }
     
     public double getArea(){
-        double area=Math.PI*radius*radius;
-        return area;
+        return Math.PI*radius*radius;
     } 
     
     public String toString(){
