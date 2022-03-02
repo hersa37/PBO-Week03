@@ -22,6 +22,7 @@ public class DrawJFrame {
         
         
         DrawJPanel panelCircle=new DrawJPanel();
+        
         frame.setSize(500,500);
         frame.setVisible(true);
         frame.add(panelCircle);
@@ -30,13 +31,12 @@ public class DrawJFrame {
         Circle5 circle=new Circle5();
         panelCircle.addDraw(circle);
         
-        TimeUnit.SECONDS.sleep(1);
-        circle.moveHorizontal(50);
-        panelCircle.addDraw(circle);
+        TimeUnit.SECONDS.sleep(1); //Delay 1 second
+        circle.moveHorizontal(50); 
+        panelCircle.addDraw(circle); //redraws circle to new parameter
         
         TimeUnit.SECONDS.sleep(1);
-        circle.setColor("green");
-       
+        circle.setColor("green");       
         panelCircle.addDraw(circle);
         
                 
