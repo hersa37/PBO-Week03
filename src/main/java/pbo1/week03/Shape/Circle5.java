@@ -129,7 +129,8 @@ public class Circle5 {
         
         g.fillArc(xPosition, yPosition, 2*radius, 2*radius, 0, 360);
     }
-    
+
+    @Override
     public String toString(){
         return "Radius\t\t "+radius
                 +"\nColor\t\t: "+color
