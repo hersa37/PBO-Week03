@@ -51,6 +51,8 @@ public class Circle5 {
         this.color=COLOR;
     }
     
+    
+    
     public void setRadius(int radius){
         this.radius=radius;
     }
@@ -127,7 +129,7 @@ public class Circle5 {
                 g.setColor(Color.BLACK);         
         }
         
-        g.fillArc(xPosition, yPosition, 2*radius, 2*radius, 0, 360);
+        g.fillArc(xPosition, yPosition, 2*radius, 2*radius, 0, 180);
     }
 
     @Override

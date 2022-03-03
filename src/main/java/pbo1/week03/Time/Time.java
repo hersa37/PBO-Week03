@@ -13,37 +13,33 @@ package pbo1.week03.Time;
  */
 public class Time {
     //Constants
-    private final int SECOND;
-    private final int MINUTE;
-    private final int HOUR;
+    private final int SECOND=0;
+    private final int MINUTE=0;
+    private final int HOUR=0;
     //Attributes
     private int second;
     private int minute;
     private int hour;
     
     public Time(){
-        
-        SECOND=0;
-        MINUTE=0;
-        HOUR=0;
-        
+//        this(0, 0, 0);
         second=SECOND;
         minute=MINUTE;
-        hour=HOUR;        
+        hour=HOUR;
     }
     
-    public Time(int second, int minute, int hour){
-        SECOND=second;
-        MINUTE=minute;
-        HOUR=hour;
-        
-        this.second=SECOND;
-        this.minute=MINUTE;
-        this.hour=HOUR;        
+    public Time(int second, int minute, int hour){        
+        this.second=second;
+        this.minute=minute;
+        this.hour=hour;        
     }
     
     public void setSecond(int second){
-        this.second=second;
+        if(second>=0){
+            minute+=(int)(second/60);
+            this.second=second%60;
+        }    
+            
     }
     
     public int getSecond(){
@@ -51,8 +47,10 @@ public class Time {
     }
     
     public void setMinute(int minute){
-        this.minute=minute;
-        
+        if(minute>=0){
+            hour+=(int)(minute/60);
+            this.minute=minute%60;
+        }
     }
     
     public int getMinute(){
@@ -67,6 +65,7 @@ public class Time {
         return hour;
     }
     
+    @Override
     public String toString(){
         return "Second\t: "+second
                 +"\nMinute\t: "+minute

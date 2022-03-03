@@ -33,12 +33,15 @@ public class DrawJFrame {
         
         TimeUnit.SECONDS.sleep(1); //Delay 1 second
         circle.moveHorizontal(50); 
-        panelCircle.addDraw(circle); //redraws circle to new parameter
+        panelCircle.addDraw(circle); //redraws circle with new parameter
         
         TimeUnit.SECONDS.sleep(1);
         circle.setColor("green");       
         panelCircle.addDraw(circle);
         
+        TimeUnit.SECONDS.sleep(1);
+        circle.setRadius(50);
+        panelCircle.addDraw(circle);
                 
     }
 }

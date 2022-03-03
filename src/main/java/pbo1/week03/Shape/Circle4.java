@@ -13,34 +13,24 @@ package pbo1.week03.Shape;
  */
 public class Circle4 {
     //Constant
-    private final int RADIUS;
-    private final int XPOSITION;
-    private final int YPOSITION;
-    private final String COLOR;
+    private final int RADIUS=20;
+    private final int XPOSITION=100;
+    private final int YPOSITION=100;
+    private final  String COLOR="black";
     //Attribute
     private int radius;
     private int xPosition;
     private int yPosition;
     private String color;
     
-    public Circle4() {
-        RADIUS=20;
-        XPOSITION=100;
-        YPOSITION=100;
-        COLOR="black";
-        
+    public Circle4() {               
         radius=RADIUS;
         xPosition=XPOSITION;
         yPosition=YPOSITION;
         color=COLOR;
     }
     
-    public Circle4(int radius, int xPosition, int yPosition, String color){
-        RADIUS=radius;
-        XPOSITION=xPosition;
-        YPOSITION=yPosition;
-        COLOR=color;
-        
+    public Circle4(int radius, int xPosition, int yPosition, String color){       
         this.radius=RADIUS;
         this.xPosition=XPOSITION;
         this.yPosition=YPOSITION;
