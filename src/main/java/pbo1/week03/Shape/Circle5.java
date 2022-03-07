@@ -16,45 +16,27 @@ import java.awt.Graphics;
  * Informatika - Universitas Sanata Dharma
  */
 public class Circle5 {
-    
-    private final int RADIUS;
-    private final int XPOSITION;
-    private final int YPOSITION;
-    private final String COLOR;
-    
     private int radius;
     private int xPosition;
     private int yPosition;
     private String color;
     
-    public Circle5() {
-        RADIUS=20;
-        XPOSITION=100;
-        YPOSITION=100;
-        COLOR="black";
-        
-        radius=RADIUS;
-        xPosition=XPOSITION;
-        yPosition=YPOSITION;
-        color=COLOR;
+    public Circle5() {       
+        this(20, 100, 100, "black");
     }
     
-    public Circle5(int radius, int xPosition, int yPosition, String color){
-        RADIUS=radius;
-        XPOSITION=xPosition;
-        YPOSITION=yPosition;
-        COLOR=color;
-        
-        this.radius=RADIUS;
-        this.xPosition=XPOSITION;
-        this.yPosition=YPOSITION;
-        this.color=COLOR;
-    }
-    
-    
+    public Circle5(int radius, int xPosition, int yPosition, String color){       
+        this.radius=radius;
+        this.xPosition=xPosition;
+        this.yPosition=yPosition;
+        this.color=color;
+    }   
     
     public void setRadius(int radius){
-        this.radius=radius;
+        if(radius>=0){
+            this.radius=radius;
+        } else this.radius=0;
+        
     }
     
     public int getRadius(){
@@ -88,9 +70,11 @@ public class Circle5 {
     public double getCircumference(){
         return 2*Math.PI*radius;
     }
+    
     public double getArea(){
         return Math.PI*radius*radius;
     } 
+    
     public void moveHorizontal(int distance){
         xPosition+=distance;
     }
@@ -127,16 +111,15 @@ public class Circle5 {
                 break;
             default:
                 g.setColor(Color.BLACK);         
-        }
-        
-        g.fillArc(xPosition, yPosition, 2*radius, 2*radius, 0, 180);
+        }        
+        g.fillArc(xPosition, yPosition, 2*radius, 2*radius, 0, 360);
     }
 
     @Override
     public String toString(){
-        return "Radius\t\t "+radius
-                +"\nColor\t\t: "+color
-                +"\nx position\t: "+xPosition
-                +"\ny position\t: "+yPosition;
+        return "{Radius: "+radius
+                +"; Color: "+color
+                +"; x position: "+xPosition
+                +"; y position: "+yPosition+"}\n";
     }
 }
