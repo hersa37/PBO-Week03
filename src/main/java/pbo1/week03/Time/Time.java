@@ -22,17 +22,24 @@ public class Time {
         this(0, 0, 0);
     }
     
-    public Time(int second, int minute, int hour){        
-        this.second=second;
-        this.minute=minute;
-        this.hour=hour;        
+    public Time(int hour, int minute, int second){        
+        if(second>=0 && second<60){            
+            this.second=second;
+        } else this.second=0;
+        if(minute>=0 && minute<60){
+            this.minute=minute;
+        } else this.minute=0;
+        if(hour>=0 && hour<24){
+            this.hour=hour;
+        } this.hour=0;
+            
     }
     
     public void setSecond(int second){
         if(second>=0 && second<60){            
             this.second=second;
         } else this.second=0;
-            
+        
     }
     
     public int getSecond(){
@@ -50,15 +57,16 @@ public class Time {
     }
     
     public void setHour(int hour){
-        
-        this.hour=hour;
+        if(hour>=0 && hour<24){
+            this.hour=hour;
+        } this.hour=0;
     }
     
     public int getHour(){
         return hour;
     }
     
-    public void nextSecond(){
+    public Time nextSecond(){
         second++;
         if(second==60){
             second=0;
@@ -68,12 +76,15 @@ public class Time {
             minute=0;
             hour++;
         }
+        if(hour==24){
+            hour=0;
+        }
+        
+        return this;
     }
     
     @Override
     public String toString(){
-        return "Second\t: "+second
-                +"\nMinute\t: "+minute
-                +"\nHour\t: "+hour;
+        return String.format("%02d:%02d:%02d", hour,minute,second);
     }
 }

@@ -12,11 +12,7 @@ package pbo1.week03.Shape;
  * Informatika - Universitas Sanata Dharma
  */
 public class Circle4 {
-    //Constant
-    private final int RADIUS=20;
-    private final int XPOSITION=100;
-    private final int YPOSITION=100;
-    private final  String COLOR="black";
+  
     //Attribute
     private int radius;
     private int xPosition;
@@ -24,21 +20,20 @@ public class Circle4 {
     private String color;
     
     public Circle4() {               
-        radius=RADIUS;
-        xPosition=XPOSITION;
-        yPosition=YPOSITION;
-        color=COLOR;
+        this(0, 0, 0, "");
     }
     
     public Circle4(int radius, int xPosition, int yPosition, String color){       
-        this.radius=RADIUS;
-        this.xPosition=XPOSITION;
-        this.yPosition=YPOSITION;
-        this.color=COLOR;
+        this.radius=radius;
+        this.xPosition=xPosition;
+        this.yPosition=yPosition;
+        this.color=color;
     }
     
    public void setRadius(int radius){
-        this.radius=radius;
+        if(radius>=0){
+            this.radius=radius;
+        } else this.radius=0;
     }
     
     public int getRadius(){
@@ -84,8 +79,8 @@ public class Circle4 {
     public void moveVertical(int distance){
         yPosition+=distance;
     }    
-    
-    
+        
+    @Override
     public String toString(){
         return "Radius\t\t: "+radius
                 +"\nColor\t\t: "+color

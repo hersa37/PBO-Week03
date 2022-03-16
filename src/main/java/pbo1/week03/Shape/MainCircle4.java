@@ -48,7 +48,7 @@ public class MainCircle4 {
         System.out.println("Keliling\t: "+circle2.getCircumference());
         System.out.println("____________________________________");
         
-        circle2.setRadius(60);
+        circle2.setRadius(-60);
         circle2.moveHorizontal(300);
         circle2.moveVertical(750);
         circle2.setColor("white");

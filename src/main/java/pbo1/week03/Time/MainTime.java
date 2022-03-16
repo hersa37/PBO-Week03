@@ -13,19 +13,23 @@ package pbo1.week03.Time;
  */
 public class MainTime {
 
-    public static void main(String[] args) {
-        System.out.println("\t\t>>Time<<\n");
-        
+    public static void main(String[] args){
+
         Time time=new Time();
+
+        System.out.println("\t\t>>2B<<");
+        System.out.println(String.format("%02d:%02d:%02d",time.getHour(),
+                time.getMinute(),time.getSecond()));
         
-        System.out.println("Atribut awal:\n"+time.toString()+"\n");
-        System.out.println("____________________________________");
+        System.out.println("\n\t\t>>2C<<");
+        System.out.println(time.toString());
         
-        time.setSecond(50);
-        time.setMinute(20);
-        time.setHour(30);
+        System.out.println("\n\t\t>>2E<<");
+        System.out.println(time.nextSecond());
         
-        System.out.println("Atribut akhir:\n"+time.toString()+"\n");
-        System.out.println("____________________________________");
+        System.out.println("\n\t\t>>2F<<");
+        System.out.println(time.nextSecond().nextSecond().nextSecond());
+            
+        
     }
 }
